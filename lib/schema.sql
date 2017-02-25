@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS map (
    tile_column INTEGER,
    tile_row INTEGER,
    tile_id TEXT,
-   grid_id TEXT
+   grid_id TEXT,
+   updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS grid_key (
